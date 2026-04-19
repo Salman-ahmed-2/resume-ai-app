@@ -1,6 +1,6 @@
 # ResumeAI — AI Resume Builder & Interview Coach
 
-![Hero Screenshot](./images/hero.png)
+![Hero Screenshot](src/public/pic/og-image.svg)
 
 > **AI-Powered Career Toolkit**
 
@@ -24,7 +24,6 @@ Real-time mock interview coaching with frontier AI.
 
 ## ✨ Features
 
-![Features Screenshot](./images/features.png)
 
 ### 📝 1. Resume Enhancement (Gemini 2.0 Flash)
 
@@ -61,7 +60,7 @@ Practice with real-time AI feedback.
 
 ### 📄 4. Templates & PDF Export
 
-![Templates Preview](./images/templates.png)
+
 
 * Classic · Modern · Creative · Executive
 * Live A4 preview
@@ -72,7 +71,7 @@ Practice with real-time AI feedback.
 
 ## ⚡ Quick Start
 
-![Setup Screenshot](./images/setup.png)
+
 
 ### 1️⃣ Clone & Install
 
@@ -118,10 +117,10 @@ npm run preview
 ## 🔐 Environment Variables
 
 | Variable                 | Required | Description       |
-| ------------------------ | -------- | ----------------- |
+| ------------------------ | -------- -| ----------------- |
 | `VITE_ANTHROPIC_API_KEY` | ✅        | Anthropic API key |
 | `VITE_GEMINI_API_KEY`    | ✅        | Gemini API key    |
-| `VITE_APP_URL`           | ❌        | Deployed app URL  |
+| `VITE_APP_URL`           | ✅        | Deployed app URL  |
 
 ⚠ **Security Note:**
 These keys are exposed in the client. Restrict them to your domain:
@@ -133,7 +132,7 @@ These keys are exposed in the client. Restrict them to your domain:
 
 ## 🚀 Deployment (Vercel)
 
-![Deployment Screenshot](./images/deploy.png)
+
 
 ### 🔹 Option A — One Click
 
@@ -162,7 +161,7 @@ vercel --prod
 
 ## 📁 Project Structure
 
-![Project Structure](./images/structure.png)
+
 
 ```bash
 ai-resume-builder/
