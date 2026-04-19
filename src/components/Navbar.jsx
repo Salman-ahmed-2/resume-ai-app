@@ -14,6 +14,8 @@ const navLinks = [
   { to: '/cover-letter', label: 'Cover Letter', icon: Mail },
 ]
 
+const COFFEE_URL = import.meta.env.VITE_LEMONSQUEEZY_COFFEE_URL || '#'
+
 export default function Navbar({ dark, setDark }) {
   const location = useLocation()
   const [scrolled, setScrolled] = useState(false)
@@ -82,8 +84,8 @@ export default function Navbar({ dark, setDark }) {
             )}
 
             {/* Coffee button - centered */}
-            <a href="https://resumai.lemonsqueezy.com/checkout/buy" target="_blank" rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200 mx-auto"
+            <a href={COFFEE_URL} target="_blank" rel="noopener noreferrer"
+              className="w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-200 cursor-pointer hover:scale-110"
               style={{ color: 'var(--accent)', border: '1px solid var(--accent)', background: 'var(--accent-glow)' }}
               onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent)'; e.currentTarget.style.color = '#0d1117' }}
               onMouseLeave={e => { e.currentTarget.style.background = 'var(--accent-glow)'; e.currentTarget.style.color = 'var(--accent)' }}

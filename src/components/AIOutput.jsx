@@ -1,7 +1,7 @@
 import { Copy, Check } from 'lucide-react'
 import { useState } from 'react'
 
-// Parses simple markdown into HTML-like JSX
+
 function parseMarkdown(text) {
   if (!text) return []
 

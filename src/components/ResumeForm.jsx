@@ -392,18 +392,18 @@ function StepEducation({ errors }) {
           </div>
           <div className="rf-grid">
             <Field label="School / University" required error={errors[`edu_${i}_school`]}>
-              <input className={`rf-input${errors[`edu_${i}_school`] ? " err" : ""}`} value={edu.school} onChange={e => setEdu(i, "school", e.target.value)} placeholder="MIT" />
+              <input className={`rf-input${errors[`edu_${i}_school`] ? " err" : ""}`} value={edu.school} onChange={e => setEdu(i, "school", e.target.value)} placeholder="FAST NUCES" />
             </Field>
             <div className="rf-grid rf-grid-2">
               <Field label="Degree" required error={errors[`edu_${i}_degree`]}>
-                <input className={`rf-input${errors[`edu_${i}_degree`] ? " err" : ""}`} value={edu.degree} onChange={e => setEdu(i, "degree", e.target.value)} placeholder="B.S. Computer Science" />
+                <input className={`rf-input${errors[`edu_${i}_degree`] ? " err" : ""}`} value={edu.degree} onChange={e => setEdu(i, "degree", e.target.value)} placeholder="B.S. Software Engineering" />
               </Field>
               <Field label="Field of Study">
                 <input className="rf-input" value={edu.field} onChange={e => setEdu(i, "field", e.target.value)} placeholder="Computer Science" />
               </Field>
             </div>
             <Field label="Graduation Year" required error={errors[`edu_${i}_year`]}>
-              <input type="number" className={`rf-input${errors[`edu_${i}_year`] ? " err" : ""}`} value={edu.year} onChange={e => setEdu(i, "year", e.target.value)} placeholder="2023" min="1950" max="2030" style={{ maxWidth: "140px" }} />
+              <input type="number" className={`rf-input${errors[`edu_${i}_year`] ? " err" : ""}`} value={edu.year} onChange={e => setEdu(i, "year", e.target.value)} placeholder="2023" min="1950" max="2050" style={{ maxWidth: "140px" }} />
             </Field>
           </div>
         </div>
@@ -435,7 +435,7 @@ function StepSkills({ errors }) {
       </Field>
       <div className="rf-grid rf-grid-2">
         <Field label="Languages" hint="Comma-separated">
-          <input className="rf-input" value={sk.languages} onChange={set("languages")} placeholder="English (Native), Spanish (Fluent)..." />
+          <input className="rf-input" value={sk.languages} onChange={set("languages")} placeholder="English (Native), Urdu (Fluent)..." />
         </Field>
         <Field label="Certifications" hint="Comma-separated">
           <input className="rf-input" value={sk.certifications} onChange={set("certifications")} placeholder="AWS Solutions Architect, PMP..." />

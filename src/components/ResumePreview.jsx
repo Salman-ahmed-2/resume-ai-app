@@ -164,7 +164,7 @@ export default function ResumePreview({
               border: 'none',
               display: 'block',
             }}
-            sandbox="allow-same-origin"
+            sandbox="allow-same-origin allow-scripts"
           />
         )}
       </div>
@@ -267,14 +267,14 @@ export default function ResumePreview({
         )}
 
         {/* Fullscreen */}
-        <button
+        {/* <button
           onClick={() => setFullscreen(f => !f)}
           className="w-7 h-7 rounded-lg flex items-center justify-center transition-colors"
           style={{ background: 'var(--bg-secondary)', border: '1px solid var(--border)', color: 'var(--text-muted)' }}
           title={fullscreen ? 'Exit fullscreen' : 'Fullscreen preview'}
         >
           {fullscreen ? <X size={12} /> : <Maximize2 size={12} />}
-        </button>
+        </button> */}
       </div>
 
       {/* Preview area */}

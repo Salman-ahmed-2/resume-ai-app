@@ -5,14 +5,7 @@ import { useAuth } from '../context/AuthContext'
 const ADSENSE_CLIENT = import.meta.env.VITE_ADSENSE_CLIENT_ID || ''
 const BANNER_SLOT = import.meta.env.VITE_ADSENSE_SLOT_BANNER || ''
 
-/**
- * AdBanner — renders Google AdSense ad for free users only.
- * Props:
- *   slot?       — override slot id
- *   format?     — 'banner' | 'rectangle'
- *   dismissible — show X button
- *   className?
- */
+
 export default function AdBanner({ slot, format = 'banner', dismissible = false, className = '' }) {
   const { profile, isPro, isLoggedIn } = useAuth()
   const adRef = useRef(null)
@@ -104,10 +97,7 @@ export default function AdBanner({ slot, format = 'banner', dismissible = false,
   )
 }
 
-/**
- * PostActionAd — shown after resume generation / interview completion.
- * Fades in after a 1.5s delay so it feels natural, not intrusive.
- */
+
 export function PostActionAd({ show, onDismiss }) {
   const { isPro } = useAuth()
   const [visible, setVisible] = useState(false)

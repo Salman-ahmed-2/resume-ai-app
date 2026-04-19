@@ -8,7 +8,7 @@ import { useAI } from '../hooks/useAI.js'
 import { useGate } from '../hooks/useGate'
 import { useAuth } from '../context/AuthContext'
 import UpgradeModal from '../components/UpgradeModal'
-import { PostActionAd } from '../components/AdBanner'
+// import { PostActionAd } from '../components/AdBanner'
 import AuthModal from '../components/AuthModal'
 
 // ─── Score helpers ─────────────────────────────────────────────────────────────

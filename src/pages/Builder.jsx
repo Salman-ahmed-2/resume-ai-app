@@ -329,14 +329,14 @@ Skills: ${skillsText}${appliedBullets}`
             <p className="section-label">Pro</p>
             <span className="flex items-center gap-1 text-xs font-mono px-2 py-0.5 rounded-full"
               style={{ background: 'var(--accent-glow)', color: 'var(--accent)', border: '1px solid var(--accent)' }}>
-              <Sparkles size={9} /> Gemini 2.0 + Claude
+              <Sparkles size={9} /> AI
             </span>
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>
             Resume <span className="italic" style={{ color: 'var(--accent)' }}>Builder</span>
           </h1>
           <p className="text-sm max-w-xl" style={{ color: 'var(--text-secondary)' }}>
-            Fill your details → Gemini AI enhances bullets & summary → choose a template → download or print.
+            Fill your details → AI enhances bullets & summary → choose a template → download or print.
           </p>
         </header>
 
@@ -492,8 +492,8 @@ Skills: ${skillsText}${appliedBullets}`
                     opacity: geminiLoading || !isLoggedIn ? 0.65 : 1,
                   }}>
                   {geminiLoading
-                    ? <><Loader2 size={16} className="animate-spin" /> Enhancing with Gemini AI…</>
-                    : <><Sparkles size={16} /> {geminiDone ? 'Re-Enhance with Gemini AI' : 'Enhance with Gemini AI'}</>}
+                    ? <><Loader2 size={16} className="animate-spin" /> Enhancing with AI…</>
+                    : <><Sparkles size={16} /> {geminiDone ? 'Re-Enhance with AI' : 'Enhance with AI'}</>}
                 </button>
               )}
 

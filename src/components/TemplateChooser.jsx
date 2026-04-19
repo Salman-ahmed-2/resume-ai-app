@@ -154,6 +154,79 @@ function TemplateThumbnail({ template: t }) {
     </svg>
   )
 
+  if (t.id === 'simple') return (
+    <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="100" height="141" fill="#fff"/>
+      <rect x="8" y="12" width="84" height="8" rx="2" fill={a} opacity="0.14"/>
+      <rect x="8" y="28" width="40" height="4" rx="2" fill={b}/>
+      <rect x="8" y="36" width="30" height="2" rx="1" fill="#6b7280"/>
+      <rect x="8" y="44" width="78" height="1.5" rx="0.75" fill="#e5e7eb"/>
+      {[0,1,2,3].map(i => <rect key={i} x="8" y={52 + i*7} width={82 - i*6} height="1.5" rx="0.75" fill="#d1d5db" />)}
+      <rect x="8" y="82" width="82" height="1.5" rx="0.75" fill="#e5e7eb"/>
+      {[0,1,2,3].map(i => <rect key={i} x="8" y={90 + i*7} width={70 - i*8} height="1.5" rx="0.75" fill="#d1d5db" />)}
+      {[0,1,2].map(i => <rect key={i} x="8" y={120 + i*5} width={24 + i*10} height="1.5" rx="0.75" fill={c} opacity="0.4" />)}
+    </svg>
+  )
+
+  if (t.id === 'clean') return (
+    <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="100" height="141" fill="#fff"/>
+      <rect x="8" y="12" width="20" height="117" rx="4" fill={c} opacity="0.35"/>
+      <rect x="34" y="14" width="52" height="5" rx="2" fill={a}/>
+      <rect x="34" y="24" width="40" height="2" rx="1" fill={b}/>
+      <rect x="34" y="32" width="30" height="2" rx="1" fill="#9ca3af"/>
+      <rect x="34" y="42" width="58" height="1.5" rx="0.75" fill="#e5e7eb"/>
+      {[0,1,2,3].map(i => <rect key={i} x="34" y={50 + i*7} width={58 - i*8} height="1.5" rx="0.75" fill="#d1d5db" />)}
+      <rect x="34" y="82" width="58" height="1.5" rx="0.75" fill={b} opacity="0.6"/>
+      {[0,1,2].map(i => <rect key={i} x="42" y={90 + i*6} width={46 - i*10} height="1.5" rx="0.75" fill="#d1d5db" />)}
+      <rect x="34" y="116" width="58" height="1.5" rx="0.75" fill={c} opacity="0.5"/>
+      <rect x="34" y="123" width="44" height="1.5" rx="0.75" fill={c} opacity="0.35"/>
+    </svg>
+  )
+
+  if (t.id === 'professional') return (
+    <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="100" height="141" fill="#fff"/>
+      <rect x="8" y="15" width="84" height="4" rx="2" fill={a} opacity="0.2"/>
+      <rect x="8" y="28" width="84" height="2" fill={b} opacity="0.4"/>
+      <rect x="20" y="35" width="60" height="4" rx="2" fill={a} opacity="0.18"/>
+      <rect x="18" y="46" width="64" height="1.5" rx="0.75" fill={b} opacity="0.22"/>
+      <rect x="18" y="64" width="64" height="1.5" rx="0.75" fill={b} opacity="0.18"/>
+      <rect x="18" y="84" width="64" height="1.5" rx="0.75" fill={b} opacity="0.18"/>
+      <rect x="18" y="104" width="64" height="1.5" rx="0.75" fill={c} opacity="0.24"/>
+      <rect x="18" y="120" width="30" height="1.5" rx="0.75" fill={c} opacity="0.24"/>
+      <rect x="52" y="120" width="30" height="1.5" rx="0.75" fill={c} opacity="0.24"/>
+    </svg>
+  )
+
+  if (t.id === 'swiss') return (
+    <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="100" height="141" fill="#fff"/>
+      <rect x="10" y="10" width="12" height="121" rx="3" fill={b} opacity="0.35"/>
+      <rect x="26" y="14" width="60" height="6" rx="2" fill={a}/>
+      <rect x="26" y="26" width="52" height="2" rx="1" fill="#6b7280"/>
+      {[0,1,2,3].map(i => <rect key={i} x="26" y={36 + i*9} width={52 - i*6} height="1.5" rx="0.75" fill="#d1d5db" />)}
+      <rect x="10" y="86" width="76" height="1.5" rx="0.75" fill="#e5e7eb"/>
+      {[0,1,2,3,4].map(i => <rect key={i} x="10" y={94 + i*7} width={60 - i*8} height="1.2" rx="0.6" fill="#d1d5db" />)}
+      <rect x="10" y="130" width="30" height="1.5" rx="0.75" fill={c} opacity="0.4"/>
+    </svg>
+  )
+
+  if (t.id === 'tech') return (
+    <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <rect width="100" height="141" fill="#0f172a"/>
+      <rect x="8" y="10" width="84" height="18" rx="4" fill={a}/>
+      <rect x="14" y="34" width="72" height="4" rx="2" fill={b} opacity="0.85"/>
+      <rect x="14" y="44" width="20" height="2" rx="1" fill="#cbd5e1"/>
+      <rect x="14" y="52" width="48" height="2" rx="1" fill="#cbd5e1" opacity="0.7"/>
+      <rect x="14" y="60" width="60" height="1.5" rx="0.75" fill={c} opacity="0.25"/>
+      <rect x="14" y="74" width="72" height="1.5" rx="0.75" fill={b} opacity="0.25"/>
+      {[0,1,2,3].map(i => <rect key={i} x="14" y={82 + i*10} width={70 - i*12} height="2" rx="1" fill={c} opacity="0.35" />)}
+      <rect x="10" y="120" width="20" height="2" rx="1" fill={a} opacity="0.75"/>
+      <rect x="38" y="120" width="28" height="2" rx="1" fill={b} opacity="0.75"/>
+    </svg>
+  )
+
   if (t.id === 'executive') return (
     <svg viewBox="0 0 100 141" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
       <rect width="100" height="141" fill="#fafaf8"/>

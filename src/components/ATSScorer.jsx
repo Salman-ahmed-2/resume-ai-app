@@ -359,7 +359,7 @@ export default function ATSScorer({ resumeData, geminiSuggestions, generateFn })
               width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center',
               gap: '8px', padding: '11px', borderRadius: 'var(--border-radius-md)',
               background: loading || !jd.trim() ? 'var(--color-background-secondary)' : 'var(--gold)',
-              color: loading || !jd.trim() ? 'var(--color-text-secondary)' : '#fff',
+              color: loading || !jd.trim() ? 'var(--color-text-secondary)' : 'black',
               border: 'none', cursor: loading || !jd.trim() ? 'not-allowed' : 'pointer',
               fontSize: '13px', fontWeight: '500', transition: 'all 0.2s',
               marginBottom: result ? '20px' : '0',
