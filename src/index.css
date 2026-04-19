@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #f5f4f0;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4336;
+    --text-muted: #847a5a;
+    --border: #d0cbb8;
+    --accent: #c8a96e;
+    --accent-hover: #b8934e;
+    --accent-glow: rgba(200, 169, 110, 0.15);
+  }
+
+  .dark {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-card: #1a2234;
+    --text-primary: #e8e5dc;
+    --text-secondary: #b5ad93;
+    --text-muted: #6e644b;
+    --border: #2d3748;
+    --accent: #d4a843;
+    --accent-hover: #e8b84d;
+    --accent-glow: rgba(212, 168, 67, 0.12);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-body font-medium text-sm transition-all duration-200;
+    background: var(--accent);
+    color: #0d1117;
+  }
+  .btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px var(--accent-glow);
+  }
+
+  .btn-ghost {
+    @apply px-6 py-3 rounded-lg font-body font-medium text-sm border transition-all duration-200;
+    border-color: var(--border);
+    color: var(--text-secondary);
+    background: transparent;
+  }
+  .btn-ghost:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    @apply rounded-xl;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-lg text-sm font-body transition-all duration-200 outline-none;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+  }
+  .input-field:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+  }
+  .input-field::placeholder {
+    color: var(--text-muted);
+  }
+
+  .section-label {
+    @apply text-xs font-mono font-medium tracking-widest uppercase;
+    color: var(--accent);
+  }
+
+  .ai-bubble {
+    @apply p-4 rounded-xl text-sm leading-relaxed;
+    background: var(--accent-glow);
+    border: 1px solid var(--accent);
+    color: var(--text-primary);
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      var(--bg-card) 0%,
+      var(--border) 50%,
+      var(--bg-card) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Prose styling for AI output */
+.ai-prose h1, .ai-prose h2, .ai-prose h3 {
+  font-family: 'Playfair Display', serif;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+.ai-prose h1 { font-size: 1.4rem; }
+.ai-prose h2 { font-size: 1.2rem; }
+.ai-prose h3 { font-size: 1rem; font-weight: 600; }
+.ai-prose p { margin-bottom: 0.75rem; color: var(--text-secondary); line-height: 1.7; }
+.ai-prose ul, .ai-prose ol { padding-left: 1.25rem; margin-bottom: 0.75rem; }
+.ai-prose li { margin-bottom: 0.3rem; color: var(--text-secondary); }
+.ai-prose strong { color: var(--text-primary); font-weight: 600; }
+.ai-prose em { color: var(--accent); }
+.ai-prose hr { border-color: var(--border); margin: 1rem 0; }
+
+/* Animate in  */
+.animate-stagger > * {
+  opacity: 1;
+  animation: fadeUp 0.5s ease-out forwards;
+}
+.animate-stagger > *:nth-child(1) { animation-delay: 0.05s; }
+.animate-stagger > *:nth-child(2) { animation-delay: 0.1s; }
+.animate-stagger > *:nth-child(3) { animation-delay: 0.15s; }
+.animate-stagger > *:nth-child(4) { animation-delay: 0.2s; }
+.animate-stagger > *:nth-child(5) { animation-delay: 0.25s; }
+.animate-stagger > *:nth-child(6) { animation-delay: 0.3s; }
