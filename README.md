@@ -10,6 +10,8 @@ ATS-optimized resumes in minutes.
 Real-time mock interview coaching with frontier AI.
 **No backend. No drama.**
 
+🌐 **Live Demo:** [resume-ai-appfinal.vercel.app](https://resume-ai-appfinal.vercel.app)
+
 ---
 
 ## 🧠 Tech Stack
@@ -117,7 +119,7 @@ npm run preview
 ## 🔐 Environment Variables
 
 | Variable                 | Required | Description       |
-| ------------------------ | -------- -| ----------------- |
+| ------------------------ | -------- | ----------------- |
 | `VITE_ANTHROPIC_API_KEY` | ✅        | Anthropic API key |
 | `VITE_GEMINI_API_KEY`    | ✅        | Gemini API key    |
 | `VITE_APP_URL`           | ✅        | Deployed app URL  |
@@ -136,7 +138,9 @@ These keys are exposed in the client. Restrict them to your domain:
 
 ### 🔹 Option A — One Click
 
-Deploy via Vercel dashboard.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/ai-resume-builder)
+
+🌐 **Deployed at:** [resume-ai-appfinal.vercel.app](https://resume-ai-appfinal.vercel.app)
 
 ---
 
@@ -248,21 +252,7 @@ const data = await generateJSON(systemPrompt, userPrompt)
 
 ---
 
-## 📸 Add Your Screenshots
 
-Create an `images` folder:
-
-```bash
-/images/
-  hero.png
-  features.png
-  templates.png
-  setup.png
-  deploy.png
-  structure.png
-```
-
----
 
 ## ⭐ Support
 
