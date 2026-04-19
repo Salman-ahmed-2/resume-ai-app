@@ -25,7 +25,7 @@ Real-time mock interview coaching with frontier AI.
 ## ✨ Features
 
 
-### 📝 1. Resume Enhancement (Gemini 2.0 Flash)
+### 📝 1. Resume Enhancement 
 
 Transform raw experience into compelling, impact-driven narratives.
 
@@ -36,7 +36,7 @@ Transform raw experience into compelling, impact-driven narratives.
 
 ---
 
-### 📊 2. ATS Score Analyzer (Claude Sonnet)
+### 📊 2. ATS Score Analyzer
 
 Beat automated resume filters.
 
@@ -47,7 +47,7 @@ Beat automated resume filters.
 
 ---
 
-### 🎤 3. Interview Engine (Claude Sonnet)
+### 🎤 3. Interview Engine 
 
 Practice with real-time AI feedback.
 
