@@ -1,6 +1,6 @@
 # ResumeAI — AI Resume Builder & Interview Coach
 
-![Hero Screenshot](src/public/pic/og-image.svg)
+![Hero Screenshot](src/public/pic/Pasted image.png)
 
 > **AI-Powered Career Toolkit**
 
