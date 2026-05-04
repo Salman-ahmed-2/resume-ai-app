@@ -294,7 +294,7 @@ export default function Landing() {
 
       {/* Footer */}
       <footer className="py-8 text-center text-sm" style={{ color: 'var(--text-muted)', borderTop: '1px solid var(--border)' }}>
-        <p>ResumeAI © {new Date().getFullYear()} · Built with CARE</p>
+        <p>ResumeAI © {new Date().getFullYear()} · Built with CARE By Salman</p>
       </footer>
     </div>
   )
